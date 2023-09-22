@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background1"
+    android:layout_height="match_parent"
+    tools:context=".view.DetailsActivity">
+
+    <TextView
+        android:id="@+id/TitleTV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="10dp"
+        android:text="Goal Title"
+        android:textColor="@color/green"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="37dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+
+        android:src="@drawable/ic_arrow" />
+    <TextView
+        android:id="@+id/AmountTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/green"
+        android:layout_marginTop="80dp"
+        android:text="amount"
+        android:layout_marginLeft="120dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_money"
+        android:layout_marginTop="84dp"
+        android:layout_marginLeft="50dp"/>
+    <TextView
+        android:id="@+id/DateTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/green"
+        android:layout_marginTop="120dp"
+        android:text="date"
+        android:layout_marginLeft="120dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_date"
+        android:layout_marginTop="124dp"
+        android:layout_marginLeft="50dp"/>
+
+
+    <EditText
+        android:id="@+id/mAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="180dp"
+        android:background="@drawable/loginbutton"
+        android:backgroundTint="@color/white"
+        android:drawableStart="@drawable/ic_money"
+        android:drawablePadding="10dp"
+        android:hint="How much do you want to save today?"
+        android:inputType="text"
+        android:padding="15dp"
+        android:textColor="@color/green"
+        android:textSize="18sp"
+        android:textColorHint="@color/green" />
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_marginTop="235dp"
+        android:text="Save"
+        android:textColor="@color/green"
+        android:layout_marginLeft="155dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/moneyRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        />
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

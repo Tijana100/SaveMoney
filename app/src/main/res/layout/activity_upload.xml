@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background1"
+    android:layout_height="match_parent"
+    android:id="@+id/uploadL"
+    tools:context=".view.UploadActivity">
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="22dp"
+       android:gravity="center"
+       android:text="Add your new goal"
+       android:textColor="@color/base"
+       android:textSize="40sp"
+       android:textStyle="bold" />
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/goalName"
+       android:inputType="text"
+       android:textColorHint="@color/green"
+       android:hint="Goal title"
+       android:background="@drawable/loginbutton"
+       android:backgroundTint="@color/white"
+       android:padding="20dp"
+       android:layout_marginHorizontal="20dp"
+       android:layout_marginVertical="110dp"
+       android:drawableStart="@drawable/ic_awesome"
+       android:drawablePadding="10dp"/>
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:inputType="text"
+       android:textColorHint="@color/green"
+       android:id="@+id/goalAmount"
+       android:hint="How much you want to save?"
+       android:background="@drawable/loginbutton"
+       android:backgroundTint="@color/white"
+       android:padding="20dp"
+       android:layout_marginHorizontal="20dp"
+       android:layout_marginVertical="190dp"
+       android:drawableStart="@drawable/ic_money"
+       android:drawablePadding="10dp"/>
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:inputType="text"
+       android:textColorHint="@color/green"
+       android:id="@+id/goalEnd"
+       android:hint="End date"
+       android:background="@drawable/loginbutton"
+       android:backgroundTint="@color/white"
+       android:padding="20dp"
+       android:layout_marginHorizontal="20dp"
+       android:layout_marginVertical="270dp"
+       android:drawableStart="@drawable/ic_date"
+       android:drawablePadding="10dp"/>
+   <Button
+       android:id="@+id/upLoadBtn"
+       android:layout_marginTop="85dp"
+       android:text="Upload"
+       android:textStyle="bold"
+       android:textSize="18sp"
+       android:layout_gravity="center"
+       app:backgroundTint="#208E24"
+       android:layout_width="150dp"
+       android:layout_height="50dp"/>
+   <Button
+       android:id="@+id/backBtn"
+       android:layout_marginTop="200dp"
+       android:text="See your goals"
+       android:layout_gravity="center"
+       app:backgroundTint="@color/white"
+       android:textColor="@color/green"
+       android:textStyle="bold"
+       android:textSize="18sp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"/>
+
+   <ImageView
+       android:layout_width="wrap_content"
+
+       android:layout_height="250dp"
+       android:layout_gravity="bottom|center"
+       android:src="@drawable/wallet" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

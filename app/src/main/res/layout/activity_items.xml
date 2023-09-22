@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/items"
+    tools:context=".view.ItemsActivity"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/textView"
+        android:text="Your goals"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:textSize="40sp"
+        android:textColor="@color/base"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
